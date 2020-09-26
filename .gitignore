@@ -1,0 +1,6 @@
+#Ignore List for VSCode Files
+/.vscode
+
+#Projects Not Finished
+/actioncard
+/feedcard
