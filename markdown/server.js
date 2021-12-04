@@ -1,17 +1,17 @@
 const request = require('request');
 const crypto = require('crypto');
 
-var secret = "thesecret";                            //secret
-var url = "https://example.com/postrecieve";         //post url
+var secret = "mysecretofwebhookisbalabala";          // secret
+var url = "https://example.com/postrecieve";         // post url
 var data = {
-    "msgtype": "text", 
+    "msgtype": "markdown", 
     "markdown": {
-        "title": "title",                            //title
-        "text": "# message"                          //message
+        "title": "Makerdown Title",                  // title
+        "text": "Hello World!"                       // message
     }, 
     "at": {
-        "atMobiles": [],                             //at someone
-        "isAtAll": false                             //at all
+        "atMobiles": [],                             // @(at) someone
+        "isAtAll": false                             // @(at) all
     }
 };
 var time = Date.now();

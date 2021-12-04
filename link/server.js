@@ -1,14 +1,14 @@
 const request = require('request');
 const crypto = require('crypto');
 
-var secret = "thesecret";                                 //secret
+var secret = "mysecretofwebhookisbalabala"; // secret
 var url = "https://example.com/postrecieve";              //post url
 var data = {
     "msgtype": "link", 
     "link": {
-        "text": "text",                                   //document
-        "title": "title",                                 //title
-        "picUrl": "https://example.com/img.png",          //image
+        "text": "Hello World!",                           //document
+        "title": "My Webpage",                            //title
+        "picUrl": "https://example.com/img.png",          //icon
         "messageUrl": "https://example.com/document.html" //link
     }, 
     "at": {
