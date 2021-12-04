@@ -1,19 +1,19 @@
 const request = require('request');
 const crypto = require('crypto');
 
-var secret = "mysecretofwebhookisbalabala"; // secret
-var url = "https://example.com/postrecieve";              //post url
+var secret = "mysecretofwebhookisbalabala";               // secret
+var url = "https://example.com/postrecieve";              // post url
 var data = {
     "msgtype": "link", 
     "link": {
-        "text": "Hello World!",                           //document
-        "title": "My Webpage",                            //title
-        "picUrl": "https://example.com/img.png",          //icon
-        "messageUrl": "https://example.com/document.html" //link
+        "text": "Hello World!",                           // document
+        "title": "My Webpage",                            // title
+        "picUrl": "https://example.com/img.png",          // icon
+        "messageUrl": "https://example.com/document.html" // link
     }, 
     "at": {
-        "atMobiles": [],                                  //at someone
-        "isAtAll": false                                  //at all
+        "atMobiles": [],                                  // @(at) someone
+        "isAtAll": false                                  // @(at) all
     }
 };
 var time = Date.now();
@@ -34,6 +34,8 @@ request.post(
     function (error, response, body) {
         if (!error && response.statusCode == 200) {
             console.log(body);
+        } else {
+            console.log(error);
         }
     }
 );

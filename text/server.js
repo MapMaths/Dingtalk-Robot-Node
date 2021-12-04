@@ -1,12 +1,12 @@
 const request = require('request');
 const crypto = require('crypto');
 
-var secret = "mysecretofwebhookisbalabala"; //secret
-var url = "https://example.com/postrecieve"; //post url
+var secret = "mysecretofwebhookisbalabala";          //secret
+var url = "https://example.com/postrecieve";         //post url
 var data = {
     "msgtype": "text", 
     "text": {
-        "content": "Hello World!"                   //message
+        "content": "Hello World!"                    //message
     }, 
     "at": {
         "atMobiles": [],                             // @(at) someone
@@ -31,6 +31,8 @@ request.post(
     function (error, response, body) {
         if (!error && response.statusCode == 200) {
             console.log(body);
+        } else {
+            console.log(error);
         }
     }
 );
