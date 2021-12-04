@@ -1,6 +1,6 @@
 # Dingtalk-Robot-Node
 
-An example program for Dingtalk Robot by Node.js to send messages to the chat group.
+A demo for Dingtalk Robot by Node.js to send messages to the chat group.
 
 ## Prerequisite
 
