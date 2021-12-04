@@ -1,6 +1,10 @@
-#Ignore List for VSCode Files
+# Ignore List for VSCode Files
 /.vscode
 
-#Projects Not Finished
+# NPM files to Ignore
+/node_modules
+package-lock.json
+
+# Projects Not Finished
 /actioncard
 /feedcard

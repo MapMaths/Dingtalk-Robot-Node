@@ -7,7 +7,7 @@ A demo for Dingtalk Robot by Node.js to send messages to the chat group.
 This program requires Node.js and `request` module.
 
 ```shell
-npm install request
+npm i
 ```
 
 **Note:** `request` module has been [deprecated](https://github.com/request/request/issues/3142) and I am going to turn the depenency to `got` module.
